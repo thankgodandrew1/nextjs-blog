@@ -24,6 +24,7 @@ export function getSortedPostsData() {
     return {
       id,
       ...matterResult.data,
+      ...matterResult.data.date
     };
   });
   // Sort posts by date
